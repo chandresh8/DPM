@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnParentStudentProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_15sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/ic_profile" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivProfileUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_menu_icon"
+                    android:onClick="onClickEvent"
+                    android:padding="@dimen/_7sdp"
+                    app:srcCompat="@drawable/ic_camera" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                style="@style/editTextLinearLayoutStyle"
+                android:layout_marginTop="@dimen/_30sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_student_id" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/evStudentId"
+                    style="@style/editTextStyle"
+                    android:hint="@string/lblId"
+                    android:inputType="number"
+                    android:maxLength="15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/editTextLinearLayoutStyle"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_name" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/evName"
+                    style="@style/editTextStyle"
+                    android:hint="@string/lblName"
+                    android:inputType="textCapSentences"
+                    android:maxLength="60" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/editTextLinearLayoutStyle"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/evContactNo"
+                    style="@style/editTextStyle"
+                    android:hint="@string/lblContactNo"
+                    android:inputType="textCapSentences"
+                    android:maxLength="15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/editTextLinearLayoutStyle"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    app:srcCompat="@drawable/ic_address" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/evAddress"
+                    style="@style/editTextStyle"
+                    android:hint="@string/lblAddress"
+                    android:inputType="textCapSentences"
+                    android:maxLength="100" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCreateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_alert_yes"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/lblCreateProfile1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15ssp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

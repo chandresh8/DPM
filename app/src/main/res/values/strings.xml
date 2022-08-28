@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DPM</string>
+
+    <string name="adminPassword">WinITDMP01</string>
+
+    <string name="lblAppName">Degree Programme Mapper App</string>
+    <string name="lblDisclaimer">Disclaimer</string>
+    <string name="lblOk">OK</string>
+    <string name="lblWelcome">Welcome\nto\nDegree Programme Mapper</string>
+    <string name="lblSelectRole">You are a</string>
+    <string name="lblAdmin">Admin</string>
+    <string name="lblStudent">Student</string>
+    <string name="lblOr">or</string>
+    <string name="lblAdminPassword">Admin Password</string>
+    <string name="lblEnterPassword">Please enter password</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="lblLogin">Login</string>
+    <string name="lblAdminMenu">Admin Menu</string>
+    <string name="lblManageStudents">Manage Students</string>
+    <string name="lblManageModules">Manage Modules</string>
+    <string name="lblAboutUs">About Us</string>
+    <string name="lblSignOut">Sign Out</string>
+    <string name="lblCreateProfile">Create Your Profile</string>
+    <string name="lblId">Student ID</string>
+    <string name="lblName">Name</string>
+    <string name="lblContactNo">Contact No</string>
+    <string name="lblAddress">Address</string>
+    <string name="lblCreateProfile1">Create Profile</string>
+    <string name="lblSearchKeyword">Search Keywords &#8230;</string>
+
+    <string name="msgDisclaimer">The DPM App is a Prototype version of a degree planner only and NOT an official study plan. It is intended that students shall use this to get an understanding of the pathways offered and then discuss study plans with a Wintec representative. Pathways may change accordingly making older versions redundant – Wintec takes no responsibility of outdated pathways or information displayed on the app.</string>
+
+    <string name="errorMsgEnterAdminPassword">Please enter admin password</string>
+    <string name="errorMsgValidAdminPassword">Please enter valid admin password</string>
+</resources>
